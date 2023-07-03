@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2026 饅頭</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/authorityManagement.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <ul class="nav nav-pills">
+
+            <li class="nav-item">
+                <a class="navbar-brand" href="#scrollspyHeading1">ログアウト</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="box">
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group" style="margin-top: -5px;">
+            <button type=" button" class="btn btn-dark" style="width:180px;height:30px; text-align:left;">履歷書出力</button>
+            <button type="button" class="btn btn-dark" style="width:180px;height:30px; text-align:left;">勤怠入力</button>
+            <button type="button" class="btn btn-dark" style="width:180px;height:30px; text-align:left;">感想入力</button>
+            <button type="button" class="btn btn-dark"
+                style="width:180px;height:35px; text-align:left;">パスワード変更</button>
+
+            <!--選單顏色漸層-->
+            <div class="color-lump"></div>
+            <nav id="navbar-example3">
+        </div>
+        <div class="right" id="divright">
+            <div class="container">
+                <div class="col-8 p-3">&emsp;権限グループ権限編集</div>
+                <table class="table table-borderless">
+
+                    <tbody>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="courseFlag">
+                                    <input class="courseFlag_checkbox" type="checkbox" id="courseFlag_checked"
+                                        value="講座インフォメーション">
+                                    <label class="courseFlag_label" for="courseFlag_checked">講座インフォメーション</label>
+                                </div>
+                            </td>
+                            <td><input class="courseFlag_preview_checkbox" type="checkbox"
+                                    id="courseFlag_preview_checked" value="プレビュー">
+                                <label class="courseFlag_preview_label" for="courseFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="courseFlag_add_checkbox" type="checkbox" id="courseFlag_add_checked"
+                                    value="追加">
+                                <label class="courseFlag_add_label" for="courseFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="courseFlag_edit_checkbox" type="checkbox" id="courseFlag_edit_checked"
+                                    value="編集">
+                                <label class="courseFlag_edit_label" for="courseFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="courseFlag_delete_checkbox" type="checkbox" id="courseFlag_delete_checked"
+                                    value="削除">
+                                <label class="courseFlag_delete_label" for="courseFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="classListFlag">
+                                    <input class="classListFlag_checkbox" type="checkbox" id="classListFlag_checked"
+                                        value="クラスリスト">
+                                    <label class="classListFlag_label" for="classListFlag_checked">クラスリスト</label>
+                                </div>
+                            </td>
+                            <td><input class="classListFlag_preview_checkbox" type="checkbox"
+                                    id="classListFlag_preview_checked" value="プレビュー">
+                                <label class="classListFlag_preview_label"
+                                    for="classListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="classListFlag_add_checkbox" type="checkbox" id="classListFlag_add_checked"
+                                    value="追加">
+                                <label class="classListFlag_add_label" for="classListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="classListFlag_edit_checkbox" type="checkbox"
+                                    id="classListFlag_edit_checked" value="編集">
+                                <label class="classListFlag_edit_label" for="classListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="classListFlag_delete_checkbox" type="checkbox"
+                                    id="classListFlag_delete_checked" value="削除">
+                                <label class="classListFlag_delete_label" for="classListFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="classDetailEditFlag">
+                                    <input class="classDetailEditFlag_checkbox" type="checkbox"
+                                        id="classDetailEditFlag_checked" value="クラス明細編集">
+                                    <label class="classDetailEditFlag_label"
+                                        for="classDetailEditFlag_checked">クラス明細編集</label>
+                                </div>
+                            </td>
+                            <td><input class="classDetailEditFlag_preview_checkbox" type="checkbox"
+                                    id="classDetailEditFlag_preview_checked" value="プレビュー">
+                                <label class="classDetailEditFlag_preview_label"
+                                    for="classDetailEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="classDetailEditFlag_add_checkbox" type="checkbox"
+                                    id="classDetailEditFlag_add_checked" value="追加">
+                                <label class="classDetailEditFlag_add_label"
+                                    for="classDetailEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="classDetailEditFlag_edit_checkbox" type="checkbox"
+                                    id="classDetailEditFlag_edit_checked" value="編集">
+                                <label class="classDetailEditFlag_edit_label"
+                                    for="classDetailEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="classDetailEditFlag_delete_checkbox" type="checkbox"
+                                    id="classDetailEditFlag_delete_checked" value="削除">
+                                <label class="classDetailEditFlag_delete_label"
+                                    for="classDetailEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="scheduleFlag">
+                                    <input class="scheduleFlag_checkbox" type="checkbox" id="scheduleFlag_checked"
+                                        value="講座スケジュール">
+                                    <label class="scheduleFlag_label" for="scheduleFlag_checked">講座スケジュール</label>
+                                </div>
+                            </td>
+                            <td><input class="scheduleFlag_preview_checkbox" type="checkbox"
+                                    id="scheduleFlag_preview_checked" value="プレビュー">
+                                <label class="scheduleFlag_preview_label"
+                                    for="scheduleFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="scheduleFlag_add_checkbox" type="checkbox" id="scheduleFlag_add_checked"
+                                    value="追加">
+                                <label class="scheduleFlag_add_label" for="scheduleFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="scheduleFlag_edit_checkbox" type="checkbox" id="scheduleFlag_edit_checked"
+                                    value="編集">
+                                <label class="scheduleFlag_edit_label" for="scheduleFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="scheduleFlag_delete_checkbox" type="checkbox"
+                                    id="scheduleFlag_delete_checked" value="削除">
+                                <label class="scheduleFlag_delete_label" for="scheduleFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="scheduleEditFlag">
+                                    <input class="scheduleEditFlag_checkbox" type="checkbox"
+                                        id="scheduleEditFlag_checked" value="講座スケジュール編集">
+                                    <label class="scheduleEditFlag_label"
+                                        for="scheduleEditFlag_checked">講座スケジュール編集</label>
+                                </div>
+                            </td>
+                            <td><input class="scheduleEditFlag_preview_checkbox" type="checkbox"
+                                    id="scheduleEditFlag_preview_checked" value="プレビュー">
+                                <label class="scheduleEditFlag_preview_label"
+                                    for="scheduleEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="scheduleEditFlag_add_checkbox" type="checkbox"
+                                    id="scheduleEditFlag_add_checked" value="追加">
+                                <label class="scheduleEditFlag_add_label" for="scheduleEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="scheduleEditFlag_edit_checkbox" type="checkbox"
+                                    id="scheduleEditFlag_edit_checked" value="編集">
+                                <label class="scheduleEditFlag_edit_label"
+                                    for="scheduleEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="scheduleEditFlag_delete_checkbox" type="checkbox"
+                                    id="scheduleEditFlag_delete_checked" value="削除">
+                                <label class="scheduleEditFlag_delete_label"
+                                    for="scheduleEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="courseDetailListFlag">
+                                    <input class="courseDetailListFlag_checkbox" type="checkbox"
+                                        id="courseDetailListFlag_checked" value="講座明細リスト">
+                                    <label class="courseDetailListFlag_label"
+                                        for="courseDetailListFlag_checked">講座明細リスト</label>
+                                </div>
+                            </td>
+                            <td><input class="courseDetailListFlag_preview_checkbox" type="checkbox"
+                                    id="courseDetailListFlag_preview_checked" value="プレビュー">
+                                <label class="courseDetailListFlag_preview_label"
+                                    for="courseDetailListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="courseDetailListFlag_add_checkbox" type="checkbox"
+                                    id="courseDetailListFlag_add_checked" value="追加">
+                                <label class="courseDetailListFlag_add_label"
+                                    for="courseDetailListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="courseDetailListFlag_edit_checkbox" type="checkbox"
+                                    id="courseDetailListFlag_edit_checked" value="編集">
+                                <label class="courseDetailListFlag_edit_label"
+                                    for="courseDetailListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="courseDetailListFlag_delete_checkbox" type="checkbox"
+                                    id="courseDetailListFlag_delete_checked" value="削除">
+                                <label class="courseDetailListFlag_delete_label"
+                                    for="courseDetailListFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="courseDetailEditFlag">
+                                    <input class="courseDetailEditFlag_checkbox" type="checkbox"
+                                        id="courseDetailEditFlag_checked" value="講座明細編集">
+                                    <label class="courseDetailEditFlag_label"
+                                        for="courseDetailEditFlag_checked">講座明細編集</label>
+                                </div>
+                            </td>
+                            <td><input class="courseDetailEditFlag_preview_checkbox" type="checkbox"
+                                    id="courseDetailEditFlag_preview_checked" value="プレビュー">
+                                <label class="courseDetailEditFlag_preview_label"
+                                    for="courseDetailEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="courseDetailEditFlag_add_checkbox" type="checkbox"
+                                    id="courseDetailEditFlag_add_checked" value="追加">
+                                <label class="courseDetailEditFlag_add_label"
+                                    for="courseDetailEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="courseDetailEditFlag_edit_checkbox" type="checkbox"
+                                    id="courseDetailEditFlag_edit_checked" value="編集">
+                                <label class="courseDetailEditFlag_edit_label"
+                                    for="courseDetailEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="courseDetailEditFlag_delete_checkbox" type="checkbox"
+                                    id="courseDetailEditFlag_delete_checked" value="削除">
+                                <label class="courseDetailEditFlag_delete_label"
+                                    for="courseDetailEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="resumeFlag">
+                                    <input class="resumeFlag_checkbox" type="checkbox" id="resumeFlag_checked"
+                                        value="履歴書リスト">
+                                    <label class="resumeFlag_label" for="resumeFlag_checked">履歴書リスト</label>
+                                </div>
+                            </td>
+                            <td><input class="resumeFlag_preview_checkbox" type="checkbox"
+                                    id="resumeFlag_preview_checked" value="プレビュー">
+                                <label class="resumeFlag_preview_label" for="resumeFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="resumeFlag_add_checkbox" type="checkbox" id="resumeFlag_add_checked"
+                                    value="追加">
+                                <label class="resumeFlag_add_label" for="resumeFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="resumeFlag_edit_checkbox" type="checkbox" id="resumeFlag_edit_checked"
+                                    value="編集">
+                                <label class="resumeFlag_edit_label" for="resumeFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="resumeFlag_delete_checkbox" type="checkbox" id="resumeFlag_delete_checked"
+                                    value="削除">
+                                <label class="resumeFlag_delete_label" for="resumeFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="resumeListFlag">
+                                    <input class="resumeListFlag_checkbox" type="checkbox" id="resumeListFlag_checked"
+                                        value="履歴リスト">
+                                    <label class="resumeListFlag_label" for="resumeListFlag_checked">履歴リスト</label>
+                                </div>
+                            </td>
+                            <td><input class="resumeListFlag_preview_checkbox" type="checkbox"
+                                    id="resumeListFlag_preview_checked" value="プレビュー">
+                                <label class="resumeListFlag_preview_label"
+                                    for="resumeListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="resumeListFlag_add_checkbox" type="checkbox"
+                                    id="resumeListFlag_add_checked" value="追加">
+                                <label class="resumeListFlag_add_label" for="resumeListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="resumeListFlag_edit_checkbox" type="checkbox"
+                                    id="resumeListFlag_edit_checked" value="編集">
+                                <label class="resumeListFlag_edit_label" for="resumeListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="resumeListFlag_delete_checkbox" type="checkbox"
+                                    id="resumeListFlag_delete_checked" value="削除">
+                                <label class="resumeListFlag_delete_label"
+                                    for="resumeListFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="resumeDetailFlag">
+                                    <input class="resumeDetailFlag_checkbox" type="checkbox"
+                                        id="resumeDetailFlag_checked" value="履歴明細">
+                                    <label class="resumeDetailFlag_label" for="resumeDetailFlag_checked">履歴明細</label>
+                                </div>
+                            </td>
+                            <td><input class="resumeDetailFlag_preview_checkbox" type="checkbox"
+                                    id="resumeDetailFlag_preview_checked" value="プレビュー">
+                                <label class="resumeDetailFlag_preview_label"
+                                    for="resumeDetailFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="resumeDetailFlag_add_checkbox" type="checkbox"
+                                    id="resumeDetailFlag_add_checked" value="追加">
+                                <label class="resumeDetailFlag_add_label" for="resumeDetailFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="resumeDetailFlag_edit_checkbox" type="checkbox"
+                                    id="resumeDetailFlag_edit_checked" value="編集">
+                                <label class="resumeDetailFlag_edit_label"
+                                    for="resumeDetailFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="resumeDetailFlag_delete_checkbox" type="checkbox"
+                                    id="resumeDetailFlag_delete_checked" value="削除">
+                                <label class="resumeDetailFlag_delete_label"
+                                    for="resumeDetailFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="resumeDetailEditFlag">
+                                    <input class="resumeDetailEditFlag_checkbox" type="checkbox"
+                                        id="resumeDetailEditFlag_checked" value="履歴編集">
+                                    <label class="resumeDetailEditFlag_label"
+                                        for="resumeDetailEditFlag_checked">履歴編集</label>
+                                </div>
+                            </td>
+                            <td><input class="resumeDetailEditFlag_preview_checkbox" type="checkbox"
+                                    id="resumeDetailEditFlag_preview_checked" value="プレビュー">
+                                <label class="resumeDetailEditFlag_preview_label"
+                                    for="resumeDetailEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="resumeDetailEditFlag_add_checkbox" type="checkbox"
+                                    id="resumeDetailEditFlag_add_checked" value="追加">
+                                <label class="resumeDetailEditFlag_add_label"
+                                    for="resumeDetailEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="resumeDetailEditFlag_edit_checkbox" type="checkbox"
+                                    id="resumeDetailEditFlag_edit_checked" value="編集">
+                                <label class="resumeDetailEditFlag_edit_label"
+                                    for="resumeDetailEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="resumeDetailEditFlag_delete_checkbox" type="checkbox"
+                                    id="resumeDetailEditFlag_delete_checked" value="削除">
+                                <label class="resumeDetailEditFlag_delete_label"
+                                    for="resumeDetailEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="articlePublicationFlag">
+                                    <input class="articlePublicationFlag_checkbox" type="checkbox"
+                                        id="articlePublicationFlag_checked" value="記事発表">
+                                    <label class="articlePublicationFlag_label"
+                                        for="articlePublicationFlag_checked">記事発表</label>
+                                </div>
+                            </td>
+                            <td><input class="articlePublicationFlag_preview_checkbox" type="checkbox"
+                                    id="articlePublicationFlag_preview_checked" value="プレビュー">
+                                <label class="articlePublicationFlag_preview_label"
+                                    for="articlePublicationFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="articlePublicationFlag_add_checkbox" type="checkbox"
+                                    id="articlePublicationFlag_add_checked" value="追加">
+                                <label class="articlePublicationFlag_add_label"
+                                    for="articlePublicationFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="articlePublicationFlag_edit_checkbox" type="checkbox"
+                                    id="articlePublicationFlag_edit_checked" value="編集">
+                                <label class="articlePublicationFlag_edit_label"
+                                    for="articlePublicationFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="articlePublicationFlag_delete_checkbox" type="checkbox"
+                                    id="articlePublicationFlag_delete_checked" value="削除">
+                                <label class="articlePublicationFlag_delete_label"
+                                    for="articlePublicationFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="articleListFlag">
+                                    <input class="articleListFlag_checkbox" type="checkbox" id="articleListFlag_checked"
+                                        value="記事リスト">
+                                    <label class="articleListFlag_label" for="articleListFlag_checked">記事リスト</label>
+                                </div>
+                            </td>
+                            <td><input class="articleListFlag_preview_checkbox" type="checkbox"
+                                    id="articleListFlag_preview_checked" value="プレビュー">
+                                <label class="articleListFlag_preview_label"
+                                    for="articleListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="articleListFlag_add_checkbox" type="checkbox"
+                                    id="articleListFlag_add_checked" value="追加">
+                                <label class="articleListFlag_add_label" for="articleListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="articleListFlag_edit_checkbox" type="checkbox"
+                                    id="articleListFlag_edit_checked" value="編集">
+                                <label class="articleListFlag_edit_label" for="articleListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="articleListFlag_delete_checkbox" type="checkbox"
+                                    id="articleListFlag_delete_checked" value="削除">
+                                <label class="articleListFlag_delete_label"
+                                    for="articleListFlag_delete_checked">削除</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="articleDetailFlag">
+                                    <input class="articleDetailFlag_checkbox" type="checkbox"
+                                        id="articleDetailFlag_checked" value="記事編集">
+                                    <label class="articleDetailFlag_label" for="articleDetailFlag_checked">記事編集</label>
+                                </div>
+                            </td>
+                            <td><input class="articleDetailFlag_preview_checkbox" type="checkbox"
+                                    id="articleDetailFlag_preview_checked" value="プレビュー">
+                                <label class="articleDetailFlag_preview_label"
+                                    for="articleDetailFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="articleDetailFlag_add_checkbox" type="checkbox"
+                                    id="articleDetailFlag_add_checked" value="追加">
+                                <label class="articleDetailFlag_add_label"
+                                    for="articleDetailFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="articleDetailFlag_edit_checkbox" type="checkbox"
+                                    id="articleDetailFlag_edit_checked" value="編集">
+                                <label class="articleDetailFlag_edit_label"
+                                    for="articleDetailFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="articleDetailFlag_delete_checkbox" type="checkbox"
+                                    id="articleDetailFlag_delete_checked" value="削除">
+                                <label class="articleDetailFlag_delete_label"
+                                    for="articleDetailFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="articlePreviewFlag">
+                                    <input class="articlePreviewFlag_checkbox" type="checkbox"
+                                        id="articlePreviewFlag_checked" value="記事レビュー">
+                                    <label class="articlePreviewFlag_label"
+                                        for="articlePreviewFlag_checked">記事レビュー</label>
+                                </div>
+                            </td>
+                            <td><input class="articlePreviewFlag_preview_checkbox" type="checkbox"
+                                    id="articlePreviewFlag_preview_checked" value="プレビュー">
+                                <label class="articlePreviewFlag_preview_label"
+                                    for="articlePreviewFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="articlePreviewFlag_add_checkbox" type="checkbox"
+                                    id="articlePreviewFlag_add_checked" value="追加">
+                                <label class="articlePreviewFlag_add_label"
+                                    for="articlePreviewFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="articlePreviewFlag_edit_checkbox" type="checkbox"
+                                    id="articlePreviewFlag_edit_checked" value="編集">
+                                <label class="articlePreviewFlag_edit_label"
+                                    for="articlePreviewFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="articlePreviewFlag_delete_checkbox" type="checkbox"
+                                    id="articlePreviewFlag_delete_checked" value="削除">
+                                <label class="articlePreviewFlag_delete_label"
+                                    for="articlePreviewFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="catalogListFlag">
+                                    <input class="catalogListFlag_checkbox" type="checkbox" id="catalogListFlag_checked"
+                                        value="カタログリスト">
+                                    <label class="catalogListFlag_label" for="catalogListFlag_checked">カタログリスト</label>
+                                </div>
+                            </td>
+                            <td><input class="catalogListFlag_preview_checkbox" type="checkbox"
+                                    id="catalogListFlag_preview_checked" value="プレビュー">
+                                <label class="catalogListFlag_preview_label"
+                                    for="catalogListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="catalogListFlag_add_checkbox" type="checkbox"
+                                    id="catalogListFlag_add_checked" value="追加">
+                                <label class="catalogListFlag_add_label" for="catalogListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="catalogListFlag_edit_checkbox" type="checkbox"
+                                    id="catalogListFlag_edit_checked" value="編集">
+                                <label class="catalogListFlag_edit_label" for="catalogListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="catalogListFlag_delete_checkbox" type="checkbox"
+                                    id="catalogListFlag_delete_checked" value="削除">
+                                <label class="catalogListFlag_delete_label"
+                                    for="catalogListFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="catalogDetailEditFlag">
+                                    <input class="catalogDetailEditFlag_checkbox" type="checkbox"
+                                        id="catalogDetailEditFlag_checked" value="カタログ編集">
+                                    <label class="catalogDetailEditFlag_label"
+                                        for="catalogDetailEditFlag_checked">カタログ編集</label>
+                                </div>
+                            </td>
+                            <td><input class="catalogDetailEditFlag_preview_checkbox" type="checkbox"
+                                    id="catalogDetailEditFlag_preview_checked" value="プレビュー">
+                                <label class="catalogDetailEditFlag_preview_label"
+                                    for="catalogDetailEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="catalogDetailEditFlag_add_checkbox" type="checkbox"
+                                    id="catalogDetailEditFlag_add_checked" value="追加">
+                                <label class="catalogDetailEditFlag_add_label"
+                                    for="catalogDetailEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="catalogDetailEditFlag_edit_checkbox" type="checkbox"
+                                    id="catalogDetailEditFlag_edit_checked" value="編集">
+                                <label class="catalogDetailEditFlag_edit_label"
+                                    for="catalogDetailEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="catalogDetailEditFlag_delete_checkbox" type="checkbox"
+                                    id="catalogDetailEditFlag_delete_checked" value="削除">
+                                <label class="catalogDetailEditFlag_delete_label"
+                                    for="catalogDetailEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="studentInterviewFlag">
+                                    <input class="studentInterviewFlag_checkbox" type="checkbox"
+                                        id="studentInterviewFlag_checked" value="受講生インタビュー">
+                                    <label class="studentInterviewFlag_label"
+                                        for="studentInterviewFlag_checked">受講生インタビュー</label>
+                                </div>
+                            </td>
+                            <td><input class="studentInterviewFlag_preview_checkbox" type="checkbox"
+                                    id="studentInterviewFlag_preview_checked" value="プレビュー">
+                                <label class="studentInterviewFlag_preview_label"
+                                    for="studentInterviewFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="studentInterviewFlag_add_checkbox" type="checkbox"
+                                    id="studentInterviewFlag_add_checked" value="追加">
+                                <label class="studentInterviewFlag_add_label"
+                                    for="studentInterviewFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="studentInterviewFlag_edit_checkbox" type="checkbox"
+                                    id="studentInterviewFlag_edit_checked" value="編集">
+                                <label class="studentInterviewFlag_edit_label"
+                                    for="studentInterviewFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="studentInterviewFlag_delete_checkbox" type="checkbox"
+                                    id="studentInterviewFlag_delete_checked" value="削除">
+                                <label class="studentInterviewFlag_delete_label"
+                                    for="studentInterviewFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="interviewListFlag">
+                                    <input class="interviewListFlag_checkbox" type="checkbox"
+                                        id="interviewListFlag_checked" value="インタビューリスト">
+                                    <label class="interviewListFlag_label"
+                                        for="interviewListFlag_checked">インタビューリスト</label>
+                                </div>
+                            </td>
+                            <td><input class="interviewListFlag_preview_checkbox" type="checkbox"
+                                    id="interviewListFlag_preview_checked" value="プレビュー">
+                                <label class="interviewListFlag_preview_label"
+                                    for="interviewListFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="interviewListFlag_add_checkbox" type="checkbox"
+                                    id="interviewListFlag_add_checked" value="追加">
+                                <label class="interviewListFlag_add_label"
+                                    for="interviewListFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="interviewListFlag_edit_checkbox" type="checkbox"
+                                    id="interviewListFlag_edit_checked" value="編集">
+                                <label class="interviewListFlag_edit_label"
+                                    for="interviewListFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="interviewListFlag_delete_checkbox" type="checkbox"
+                                    id="interviewListFlag_delete_checked" value="削除">
+                                <label class="interviewListFlag_delete_label"
+                                    for="interviewListFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="detailPreviewFlag">
+                                    <input class="detailPreviewFlag_checkbox" type="checkbox"
+                                        id="detailPreviewFlag_checked" value="明細プレビュー">
+                                    <label class="detailPreviewFlag_label"
+                                        for="detailPreviewFlag_checked">明細プレビュー</label>
+                                </div>
+                            </td>
+                            <td><input class="detailPreviewFlag_preview_checkbox" type="checkbox"
+                                    id="detailPreviewFlag_preview_checked" value="プレビュー">
+                                <label class="detailPreviewFlag_preview_label"
+                                    for="detailPreviewFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="detailPreviewFlag_add_checkbox" type="checkbox"
+                                    id="detailPreviewFlag_add_checked" value="追加">
+                                <label class="detailPreviewFlag_add_label"
+                                    for="detailPreviewFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="detailPreviewFlag_edit_checkbox" type="checkbox"
+                                    id="detailPreviewFlag_edit_checked" value="編集">
+                                <label class="detailPreviewFlag_edit_label"
+                                    for="detailPreviewFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="detailPreviewFlag_delete_checkbox" type="checkbox"
+                                    id="detailPreviewFlag_delete_checked" value="削除">
+                                <label class="detailPreviewFlag_delete_label"
+                                    for="detailPreviewFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>&thinsp;
+                                <div class="interviewInfoEditFlag">
+                                    <input class="interviewInfoEditFlag_checkbox" type="checkbox"
+                                        id="interviewInfoEditFlag_checked" value="インタビュー編集">
+                                    <label class="interviewInfoEditFlag_label"
+                                        for="interviewInfoEditFlag_checked">インタビュー編集</label>
+                                </div>
+                            </td>
+                            <td><input class="interviewInfoEditFlag_preview_checkbox" type="checkbox"
+                                    id="interviewInfoEditFlag_preview_checked" value="プレビュー">
+                                <label class="interviewInfoEditFlag_preview_label"
+                                    for="interviewInfoEditFlag_preview_checked">プレビュー</label>
+                            </td>
+                            <td><input class="interviewInfoEditFlag_add_checkbox" type="checkbox"
+                                    id="interviewInfoEditFlag_add_checked" value="追加">
+                                <label class="interviewInfoEditFlag_add_label"
+                                    for="interviewInfoEditFlag_add_checked">追加</label>
+                            </td>
+                            <td><input class="interviewInfoEditFlag_edit_checkbox" type="checkbox"
+                                    id="interviewInfoEditFlag_edit_checked" value="編集">
+                                <label class="interviewInfoEditFlag_edit_label"
+                                    for="interviewInfoEditFlag_edit_checked">編集</label>
+                            </td>
+                            <td><input class="interviewInfoEditFlag_delete_checkbox" type="checkbox"
+                                    id="interviewInfoEditFlag_delete_checked" value="削除">
+                                <label class="interviewInfoEditFlag_delete_label"
+                                    for="interviewInfoEditFlag_delete_checked">削除</label>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+
+
+
+            </div>
+            <br>
+            <div style="text-align:center" id="authorityGroupBookmark_3">
+                <label class="btn btn-secondary" for="authorityGroupBookmark_cancel_2">取消</label>
+                <label class="btn btn-secondary" for="authorityGroupBookmark_save_2">保存</label>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50%;
+    border: 1px solid black;
+    padding: 8px;
+}

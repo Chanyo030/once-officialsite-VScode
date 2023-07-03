@@ -1,0 +1,269 @@
+.color-lump {
+    width: 180px;
+    height: 900px;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#232323), to(#cde7ff));
+}
+
+.box {
+    display: flex;
+
+}
+
+.right {
+    margin: 0 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex: 5;
+}
+
+.authorityGroupList p {
+    flex-direction: row;
+
+}
+
+.space {
+    word-spacing: 5em;
+}
+
+#groupId {
+    position: relative;
+    top: -0.1rem;
+}
+
+#updateGroupID {
+    border-style: none;
+}
+
+#okbutton {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    padding-top: 25px;
+}
+
+input:-moz-placeholder {
+    padding-top: 25px;
+}
+
+input::-moz-placeholder {
+    padding-top: 25px;
+}
+
+.search {
+
+    margin-bottom: 30px;
+    flex: 5;
+}
+
+.table {
+    margin: -10px;
+}
+
+#authorityGroupNo {
+    width: 5rem;
+}
+
+#authority_group_id {
+    width: 300px;
+}
+
+#authority_group_name {
+    width: 300px;
+}
+
+.btn {
+    padding: 5px;
+}
+
+.englishName {
+    width: 200px;
+}
+
+.chineseName {
+    width: 200px;
+}
+
+.sex {
+    width: 80px;
+}
+
+.year {
+    width: 85px;
+}
+
+.courseFlag {
+    margin-top: -27px;
+}
+
+#delete {
+    margin-right: 80px;
+}
+
+.classListFlag {
+    margin-top: -25px;
+}
+
+.classListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.classDetailEditFlag {
+    margin-top: -25px;
+}
+
+.classDetailEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.scheduleFlag {
+    margin-top: -25px;
+}
+
+.scheduleFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.scheduleEditFlag {
+    margin-top: -25px;
+}
+
+.scheduleEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.courseDetailListFlag {
+    margin-top: -25px;
+}
+
+.courseDetailListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.courseDetailEditFlag {
+    margin-top: -25px;
+}
+
+.courseDetailEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.resumeFlag {
+    margin-top: -25px;
+}
+
+.resumeFlag_checked {
+    margin-inline-start: 30px;
+}
+
+.resumeListFlag {
+    margin-top: -25px;
+}
+
+.resumeListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.resumeDetailFlag {
+    margin-top: -25px;
+}
+
+.resumeDetailFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.resumeDetailEditFlag {
+    margin-top: -25px;
+}
+
+.resumeDetailEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.articlePublicationFlag {
+    margin-top: -29px;
+}
+
+.articleListFlag {
+    margin-top: -25px;
+}
+
+.articleListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.articleDetailFlag {
+    margin-top: -25px;
+}
+
+.articleDetailFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.articlePreviewFlag {
+    margin-top: -25px;
+}
+
+.articlePreviewFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.catalogListFlag {
+    margin-top: -25px;
+}
+
+.catalogListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.catalogDetailEditFlag {
+    margin-top: -25px;
+}
+
+.catalogDetailEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.studentInterviewFlag {
+    margin-top: -28px;
+}
+
+.interviewListFlag {
+    margin-top: -25px;
+}
+
+.interviewListFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.detailPreviewFlag {
+    margin-top: -25px;
+}
+
+.detailPreviewFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+.interviewInfoEditFlag {
+    margin-top: -25px;
+}
+
+.interviewInfoEditFlag_checkbox {
+    margin-inline-start: 20px;
+}
+
+
+.blank {
+    width: 446px;
+
+}
+
+#search {
+    float: right;
+}
+
+.authorityGroup_date {
+    float: right;
+}
